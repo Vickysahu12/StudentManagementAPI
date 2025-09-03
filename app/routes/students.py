@@ -4,7 +4,7 @@ from app.models.student import StudentCreate,StudentUpdate,StudentResponse,Stude
 from app.services.student_service import student_service
 
 router = APIRouter(
-    prefix="api/v1/student",
+    prefix="/api/v1/student",
     tags=["student"],
     responses={404:{"description":"Not found"}}
 )
